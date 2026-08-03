@@ -1,0 +1,10 @@
+{
+  "seen": {
+    "24": "0xe1d3212fad22e8b35af004bdb6e893dd22e266970d0f1bc74cfcb793d4d835de",
+    "25": "0xe4c6f150c82679754836f2cd29a75c185b6fed5eae274fc39728baf0f1fa037f"
+  },
+  "last_tree_size": 25,
+  "last_head_block": 25,
+  "witness_hash": "0334c5604e38e81a07b5b2d74e24982c3d062103ff9d043a8657cd95c38be642",
+  "runs": 1
+}
