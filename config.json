@@ -1,0 +1,7 @@
+{
+  "origin": "https://superc.com",
+  "latest_endpoint": "https://superc.com/api/checkpoint/latest",
+  "history_endpoint": "https://superc.com/api/checkpoint/history",
+  "pinned_pubkey": "UvTMfbQH3cOGtg0XisBHkqIacqMpDgNjDtfHvFK9ISg=",
+  "signed_body_prefix": "superc-sth/v1"
+}

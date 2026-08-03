@@ -1,0 +1,65 @@
+name: witness
+
+# Runs on GitHub's infrastructure — independent of the SuperChain operator.
+# Every hour it re-verifies the signed checkpoints and proves the log only ever
+# appended, then commits what it saw to this public, git-timestamped log.
+on:
+  schedule:
+    - cron: "17 * * * *"      # hourly (best-effort per GitHub)
+  workflow_dispatch: {}         # manual run
+
+permissions:
+  contents: write               # commit the observation log
+  issues: write                 # raise an alarm on divergence
+
+concurrency:
+  group: witness
+  cancel-in-progress: false
+
+jobs:
+  witness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - id: run
+        run: |
+          set +e
+          node witness.mjs 2>&1 | tee run.log
+          echo "code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Commit observation
+        if: always()
+        run: |
+          git config user.name  "superchain-witness"
+          git config user.email "witness@users.noreply.github.com"
+          git add log/
+          if git diff --cached --quiet; then
+            echo "no change to log"
+          else
+            git commit -m "witness: $(date -u +%FT%TZ)"
+            git push
+          fi
+
+      - name: Raise divergence alarm
+        if: steps.run.outputs.code == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh issue list --state open --search "SuperChain divergence in:title" --json number --jq 'length')
+          if [ "$open" = "0" ]; then
+            gh issue create \
+              --title "⚠️ SuperChain divergence detected" \
+              --body "$(printf 'The independent witness observed something that must not happen on an append-only log.\n\n```\n%s\n```\n\nSee the observation log for evidence.' "$(cat run.log)")"
+          else
+            echo "divergence issue already open — not duplicating"
+          fi
+
+      - name: Fail the run on any problem
+        if: steps.run.outputs.code != '0'
+        run: |
+          echo "witness exited ${{ steps.run.outputs.code }}"
+          exit 1
