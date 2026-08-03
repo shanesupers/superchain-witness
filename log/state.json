@@ -1,10 +1,15 @@
 {
   "seen": {
     "24": "0xe1d3212fad22e8b35af004bdb6e893dd22e266970d0f1bc74cfcb793d4d835de",
-    "25": "0xe4c6f150c82679754836f2cd29a75c185b6fed5eae274fc39728baf0f1fa037f"
+    "25": "0xe4c6f150c82679754836f2cd29a75c185b6fed5eae274fc39728baf0f1fa037f",
+    "26": "0xd127bc15bec73c650eff9abd57b93997543123fe0f063985d6b6ce6bdd0fc7c3",
+    "27": "0xafbb0bc21f836cf1c3d0efe7a5eefa99e3728f15559e81ad392cdfd08b971d81",
+    "28": "0xce6e08db5cb61e44bac9f3adedc8e84e0f151cfe4150e7ddfbcd6c258c4117c3",
+    "29": "0xf45f99cb298795ac49e62a41a90fc29ede3c3d8d6ec79ce664c3162f5a7fc752",
+    "30": "0x0dc3bbb8fa9037c59bddc77c2ef6c6ce2d4b17809d22a09038f074fe2b28bc23"
   },
-  "last_tree_size": 25,
-  "last_head_block": 25,
-  "witness_hash": "0334c5604e38e81a07b5b2d74e24982c3d062103ff9d043a8657cd95c38be642",
-  "runs": 1
+  "last_tree_size": 30,
+  "last_head_block": 30,
+  "witness_hash": "44c9e5e176180a3012f06384b567f2c37f3487683d7cbe1d12b80793d2762949",
+  "runs": 2
 }
