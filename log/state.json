@@ -57,10 +57,13 @@
     "87": "0x8aa9f95ec8dbf22a05525ecd7098b50f7f750883972d4a9f2a613bf958f440bf",
     "89": "0x45278e748ce39bd1426216d6ccc1dbbaa96d2843f6fbbe4b6915cf72a3ae5c48",
     "90": "0x1548d107ae9c36958338030104f148cf3f98f7193d5757a5cee6f502df11a946",
-    "91": "0x93c7e50c2ee9a441e860ad2440f51cf5e601ccea2c33c102a1d3fdd707c232cc"
+    "91": "0x93c7e50c2ee9a441e860ad2440f51cf5e601ccea2c33c102a1d3fdd707c232cc",
+    "92": "0xb109375c4491fb4d31a78a7cf0b7152a83ae60fb9627a71d5f2ad0b6c1aa2cab",
+    "94": "0x7d79bc7a3f1c818481e7e2c5ad6b066041d21c9664e9f74017d7a17578e58403",
+    "96": "0x8627b44d8e98852a8ddf63761731d3457e0bb92eca75831fc62225389d777a8d"
   },
-  "last_tree_size": 91,
-  "last_head_block": 91,
-  "witness_hash": "4847fef83f3783cfe121fe35fde8eb9966bdeccca098b4295d7deb1e568273e0",
-  "runs": 17
+  "last_tree_size": 96,
+  "last_head_block": 96,
+  "witness_hash": "5aa04cae5f25e618054cb9c808cab6d6e9505ec48a5f5cafa0cf8b2e75ec49aa",
+  "runs": 18
 }
