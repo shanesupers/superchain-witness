@@ -22,3 +22,4 @@
 {"t":"2026-08-05T14:36:17.494Z","status":"ok","head_block":102,"head_hash":"0xcea5b22a4c70c33b4072c96715c30f31a79e17d13992e551ee5cbbc9a0258060","tree_size":102,"signature_valid":true,"ots_status":"pending","ots_btc_block":null,"checkpoints_checked":66,"prev_witness_hash":"889318c750dd4bdebe5eeb224f884d8891cd95ac81903377904fc1b845a8eeac","witness_hash":"9567ba1b073b32e1ffcc3988b1cb145b9c8a72b54845d52e6cda000ea7f9933a"}
 {"t":"2026-08-05T16:52:55.408Z","status":"unreachable","error":"https://superc.com/api/checkpoint/latest → HTTP 404"}
 {"t":"2026-08-05T18:51:14.735Z","status":"unreachable","error":"https://superc.com/api/checkpoint/latest → HTTP 404"}
+{"t":"2026-08-05T20:39:06.648Z","status":"unreachable","error":"https://superc.com/api/checkpoint/latest → HTTP 404"}
