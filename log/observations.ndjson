@@ -30,3 +30,4 @@
 {"t":"2026-08-06T09:51:09.367Z","status":"unreachable","error":"https://superc.com/api/checkpoint/latest → HTTP 404"}
 {"t":"2026-08-06T12:18:52.720Z","status":"unreachable","error":"https://superc.com/api/checkpoint/latest → HTTP 404"}
 {"t":"2026-08-06T15:27:52.166Z","status":"unreachable","error":"https://superc.com/api/checkpoint/latest → HTTP 404"}
+{"t":"2026-08-07T00:15:31.186Z","status":"ok","head_block":147,"head_hash":"0x4abcd42e58c904ade97cecfd33d108b7ad5e647ff01b28a59bbe1b8d161fcedf","tree_size":147,"signature_valid":true,"ots_status":"pending","ots_btc_block":null,"checkpoints_checked":100,"prev_witness_hash":"9567ba1b073b32e1ffcc3988b1cb145b9c8a72b54845d52e6cda000ea7f9933a","witness_hash":"3a6de890fae4ea63a7186667350eda3a163711ae83b9e9910a444975a9aeb55c"}
