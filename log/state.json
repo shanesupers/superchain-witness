@@ -260,10 +260,11 @@
     "343": "0x896c6b12bb6e584b69d4ba89069d4c4b7a13ed51513558a96e8b7e41eae38781",
     "344": "0x9e7b00629d498a1d178d055a9f2e85bfbc00cf0d45135b8b253df840fddf2109",
     "345": "0x27d6e2ab1960df064546a5652e47d95f8954da903b0e6317235adfdf5c253409",
-    "346": "0x0b8955156e136af0bb953912c181eccab1bd61a610095caba99b6abff4a0447d"
+    "346": "0x0b8955156e136af0bb953912c181eccab1bd61a610095caba99b6abff4a0447d",
+    "347": "0xb9f6aade073dc4f596c7bb1335a0b992f25b0f522cb938814a2ed92605826222"
   },
-  "last_tree_size": 346,
-  "last_head_block": 346,
-  "witness_hash": "6b73cac07f8fa225cd8033015487824decbf231fc0a206dee0e1180eb8e53d30",
-  "runs": 254
+  "last_tree_size": 347,
+  "last_head_block": 347,
+  "witness_hash": "c0b1d0f05008eca5bbfcbce0bd154d1bc497836877947eb56a3be301f27cd9fe",
+  "runs": 255
 }
